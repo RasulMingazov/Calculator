@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/numberField"
+            android:gravity="bottom"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="373dp"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:orientation="vertical"
+            android:rowCount="5">
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="166dp"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnSpan="2"
+                android:onClick="numberClicked"
+                android:text="AC"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#D83E0D" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:onClick="numberClicked"
+                android:text="7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:onClick="numberClicked"
+                android:text="8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:onClick="numberClicked"
+                android:text="9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:onClick="numberClicked"
+                android:text="*"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#D83E0D" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:onClick="numberClicked"
+                android:text="4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:onClick="numberClicked"
+                android:text="5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:onClick="numberClicked"
+                android:text="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:onClick="numberClicked"
+                android:text="-"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#D83E0D" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:onClick="numberClicked"
+                android:text="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:onClick="numberClicked"
+                android:text="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:onClick="numberClicked"
+                android:text="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:onClick="numberClicked"
+                android:text="+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#D83E0D" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:onClick="numberClicked"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:onClick="numberClicked"
+                android:text="."
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:onClick="numberClicked"
+                android:text="="
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#837F7F" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:onClick="numberClicked"
+                android:text="/"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:backgroundTint="#D83E0D" />
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
